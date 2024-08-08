@@ -1,0 +1,141 @@
+#wrapper{
+font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    padding: 10px;
+}
+div.nav{
+    display: flex;
+    /* justify-content: space-evenly;
+    flex-direction: column; */
+    align-self: center;
+}
+.intro{
+    display: flex;
+    background-color: rgb(252, 252, 252);
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.navb{
+    width: 120px;
+}
+a.nav{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+div.int{
+    width: 1150px;
+    text-align: center;
+    background-image: url(img/accounting1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+h1.int{
+    text-transform: uppercase;
+}
+.serbox{
+    /* width: 1150px; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+div.ser{
+    width: 200px;
+   text-align: center;
+   padding: 20px;
+}
+span.head{
+    font-weight: bold;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+.about{
+    /* width: 1150px; */
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(156, 156, 156);
+    padding: 50px;
+}
+.aboutd{
+    padding-right: 32px;
+}
+.abouti{
+    width: 400px;
+}
+.team{
+    /* width: 1150px; */
+    display: flex;
+    background-color: rgb(252, 252, 252);
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.teamd{
+    padding-left: 32px;
+}
+.profile{
+    width: 200px;
+    border-radius: 50%;
+}
+button{
+    width: 180px;
+    height: 40px;
+}
+
+ @media (min-width: 1250px) {
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        width: 1250px;
+    }    
+    div.int{
+        width: 1150px;
+    }
+    .serbox{
+        width: 1150px;
+    }
+    .about{
+        width: 1150px;
+    }
+    .team{
+        width: 1150px;
+    }
+ }
+ @media (max-width: 800px) {
+    .about{
+        flex-wrap: wrap;
+    }
+    .team{
+        flex-wrap: wrap;
+    }
+    div.nav{
+        flex-wrap: wrap;
+    }    
+    .aboutd{
+        padding-right: 0px;
+        padding-bottom: 32px;
+    }
+    .abouti{
+        width: 95%;
+    }    
+    .teamd{
+        padding-left: 0%;
+    }    
+ }
